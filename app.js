@@ -19,15 +19,14 @@ let incrementScore = (team) => {
 
 //DECREMENT FUNCTION
 let decrementScore = (team) => {
-    if (team === 'teamA' ) {
+    if (team === 'teamA' && teamAScore > 0) {
         teamAScore--;
         teamAScoreValue.textContent = teamAScore;
-    } else if (team === 'teamB') {
+    } else if (team === 'teamB' && teamBScore > 0) {
         teamBScore--;
         teamBScoreValue.textContent = teamBScore;
     }
 }
-
 
 //RESET FUNCTION
 let resetScores = () => {
